@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Data Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>World Countries Data</h1>
+        <p>An accessible table showing countries from around the world</p>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <table id="countries-table">
+                <caption>List of Countries with Key Information</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Flag</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Capital</th>
+                        <th scope="col">Region</th>
+                        <th scope="col">Population</th>
+                        <th scope="col">Coordinates</th>
+                        <th scope="col">Languages</th>
+                        <th scope="col">Currencies</th>
+                    </tr>
+                </thead>
+                <tbody id="countries-tbody">
+                    <!-- Table rows will be dynamically inserted here -->
+                    <tr>
+                        <td colspan="9" class="loading">Loading countries data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Data source: countries.json | Total countries: <span id="total-countries">0</span></p>
+    </footer>
+
+    <script src="countries.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

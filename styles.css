@@ -1,0 +1,168 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #7f8c8d;
+}
+
+/* Main Content */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Table Container */
+.table-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #2c3e50;
+}
+
+/* Table Header */
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #2980b9;
+}
+
+/* Table Body */
+tbody tr {
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 12px;
+    vertical-align: top;
+}
+
+/* Special Cell Styles */
+.loading {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.flag-emoji {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.no-data {
+    color: #95a5a6;
+    font-style: italic;
+}
+
+.population {
+    text-align: right;
+}
+
+.coordinates {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #7f8c8d;
+}
+
+#total-countries {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header, .table-container, footer {
+        padding: 15px;
+    }
+    
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    
+    .flag-emoji {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    th, td {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+    
+    caption {
+        font-size: 1em;
+    }
+}
